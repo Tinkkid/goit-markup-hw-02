@@ -1,0 +1,86 @@
+/* Колір основного текста color: #212121;*/
+/* Колір другорядного текста color: #757575;*/
+/* Колір частини лого та кнопок color: #2196F3; */
+/* Колір основно фону  background: #FFFFFF;*/
+/* Колір другорядного фону background: #F5F4FA; */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --logo-button-text-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #F5F4FA;
+}
+body {
+   background-color: var(--primary-background-color) ;
+color: var(--primary-text-color);
+}
+/* Навігація сайту */
+
+.logo-letters {
+    color: var(--logo-button-text-color) ;
+}
+.logo-header {
+color: black;
+text-decoration: none;
+}
+.link {
+    color: var(--primary-text-color) ;
+    text-decoration: none;
+}
+.link:hover {color: var(--logo-button-text-color);
+}
+.link:focus {color: var(--logo-button-text-color)
+}
+.link.current {
+    color: var(--logo-button-text-color);
+}
+/* Посилання на контакти */
+.site-contacts {
+   color: var(--secondary-text-color);
+   text-decoration: none;
+}
+.site-contacts:hover {
+    color: var(--logo-button-text-color);
+}
+/* Герой */
+.hero {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
+}
+.hero-title {
+    color: white;
+}
+/* Особливості та приклади робіт з портфоліо*/
+.features-list {
+    color: var(--secondary-text-color);
+}
+
+/* Види послуг */
+
+/* Наша команда */
+.our-team-profesional {
+    color: var(--secondary-text-color);
+}
+
+/* Підвал */
+.footer {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 252px;
+}
+.logo-footer {
+    color: white;
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.footer-contacts {
+    color: #FFFFFF99;
+    text-decoration: none;
+}
+.footer-adress {
+    color: #FFFFFF;
+}

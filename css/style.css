@@ -3,6 +3,7 @@
 /* Колір частини лого та кнопок color: #2196F3; */
 /* Колір основно фону  background: #FFFFFF;*/
 /* Колір другорядного фону background: #F5F4FA; */
+/* Колір фону кнопок при виборі: #2196F3 */
 
 :root {
     --primary-text-color: #212121;
@@ -10,19 +11,33 @@
     --logo-button-text-color: #2196F3;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
+    --background-color-hover:#2196F3;
 }
+
 body {
-   background-color: var(--primary-background-color) ;
+background-color: var(--primary-background-color) ;
 color: var(--primary-text-color);
+
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
 }
-/* Навігація сайту */
+
+/* Navigation's site */
 
 .logo-letters {
-    color: var(--logo-button-text-color) ;
+    color: var(--logo-button-text-color);
 }
 .logo-header {
-color: black;
+color:#000;
 text-decoration: none;
+
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
 }
 .link {
     color: var(--primary-text-color) ;
@@ -35,7 +50,8 @@ text-decoration: none;
 .link.current {
     color: var(--logo-button-text-color);
 }
-/* Посилання на контакти */
+
+/* Links to contacts */
 .site-contacts {
    color: var(--secondary-text-color);
    text-decoration: none;
@@ -43,35 +59,52 @@ text-decoration: none;
 .site-contacts:hover {
     color: var(--logo-button-text-color);
 }
-/* Герой */
+
+/* Hero */
 .hero {
     background-color: #2F303A;
     width: 1600px;
     height: 600px;
 }
 .hero-title {
-    color: white;
+    color: #FFF;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
 }
-/* Особливості та приклади робіт з портфоліо*/
+.hero-button {
+    background-color: var(--logo-button-text-color);
+    color:#fff;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+
+/* Features and Images of the portfolio*/
 .features-list {
     color: var(--secondary-text-color);
 }
 
-/* Види послуг */
-
-/* Наша команда */
+/* Our teams */
 .our-team-profesional {
     color: var(--secondary-text-color);
 }
+.team {
+    background-color: var(--secondary-background-color);
+}
 
-/* Підвал */
+/* Adress */
 .footer {
     background-color: #2F303A;
     width: 1600px;
     height: 252px;
 }
 .logo-footer {
-    color: white;
+    color: #FFF
     text-decoration: none;
 }
 .list {
@@ -82,5 +115,26 @@ text-decoration: none;
     text-decoration: none;
 }
 .footer-adress {
-    color: #FFFFFF;
+    color: #FFF;
+}
+/* Portfolio.html */
+/* Filtr buttons */
+filtr {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.filtr:hover,
+.filtr:focus {
+    background-color: var(--logo-button-text-color);
+    color:#fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;.
 }

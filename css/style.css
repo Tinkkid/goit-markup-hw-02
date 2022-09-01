@@ -68,6 +68,9 @@ line-height: 1.2;
 .site-contacts:hover {
     color: var(--logo-button-text-color);
 }
+.site-contacts:focus {
+    color: var(--logo-button-text-color);
+}
 
 /* Hero */
 .hero {
@@ -91,6 +94,9 @@ line-height: 1.2;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
+}
+button {
+    cursor: pointer;
 }
 
 /* Features and Images of the portfolio*/
@@ -129,9 +135,22 @@ line-height: 1.2;
     color: #FFF;
     font-style: normal;
 }
+.footer-adress:hover {
+    color: var(--logo-button-text-color);
+}
+.footer-adress:focus {
+    color: var(--logo-button-text-color);
+}
+.footer-contacts:hover {
+    color: var(--logo-button-text-color);
+}
+.footer-contacts:focus {
+    color: var(--logo-button-text-color);
+}
+
 /* Portfolio.html */
 /* Filtr buttons */
-filtr {
+.filtr {
     background-color: var(--secondary-background-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;

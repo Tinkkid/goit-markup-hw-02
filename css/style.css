@@ -1,17 +1,14 @@
-/* Колір основного текста color: #212121;*/
-/* Колір другорядного текста color: #757575;*/
-/* Колір частини лого та кнопок color: #2196F3; */
-/* Колір основно фону  background: #FFFFFF;*/
-/* Колір другорядного фону background: #F5F4FA; */
-/* Колір фону кнопок при виборі: #2196F3 */
 
 :root {
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --added-text-color:#FFFFFF;
     --logo-button-text-color: #2196F3;
     --primary-background-color: #FFFFFF;
     --secondary-background-color: #F5F4FA;
     --background-color-hover:#2196F3;
+    --background-color-added:#2F303A;
+    --text-color: #000000;
 }
 
 body {
@@ -28,7 +25,7 @@ letter-spacing: 0.03em;
     list-style: none;
 }
 a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
 }
 a.logo-footer {
@@ -40,7 +37,7 @@ a.logo-footer {
     color: var(--logo-button-text-color);
 }
 .logo-header {
-color:#000;
+color:var(--text-color);
 text-decoration: none;
 
 font-family: 'Raleway', sans-serif;
@@ -49,7 +46,7 @@ font-size: 26px;
 line-height: 1.2;
 }
 .link {
-    color: var(--primary-text-color) ;
+    color: var(--secondary-text-color);
     text-decoration: none;
 }
 .link:hover {color: var(--logo-button-text-color);
@@ -74,22 +71,23 @@ line-height: 1.2;
 
 /* Hero */
 .hero {
-    background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
+    background-color: var(--background-color-added);
 }
 .hero-title {
-    color: #FFF;
+    color: var(--added-text-color);
 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
 }
 .hero-button {
     background-color: var(--logo-button-text-color);
-    color:#fff;
-    font-family: 'Roboto', sans-serif;
+    color: var(--added-text-color);
+
+    font-family: inherit, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -100,13 +98,44 @@ button {
 }
 
 /* Features and Images of the portfolio*/
-.features-list {
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+        }
+.features-title {
     color: var(--secondary-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Our works */
+.our-work-title, .our-teams-title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
 }
 
 /* Our teams */
-.our-team-profesional {
+.our-teams-name {
     color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.our-team-profession {
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
 }
 .team {
     background-color: var(--secondary-background-color);
@@ -114,12 +143,10 @@ button {
 
 /* Adress */
 .footer {
-    background-color: #2F303A;
-    width: 1600px;
-    height: 252px;
+    background-color: var(--background-color-added);
 }
 .logo-footer {
-    color: #FFF
+    color: var(--added-text-color)
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -132,20 +159,20 @@ button {
     font-style: normal;
 }
 .footer-adress {
-    color: #FFF;
+    color: var(--added-text-color);
     font-style: normal;
 }
 .footer-adress:hover {
-    color: var(--logo-button-text-color);
+    color: var(--primary-text-color);
 }
 .footer-adress:focus {
-    color: var(--logo-button-text-color);
+    color: var(--primary-text-color);
 }
 .footer-contacts:hover {
-    color: var(--logo-button-text-color);
+    color: var(--primary-text-color);
 }
 .footer-contacts:focus {
-    color: var(--logo-button-text-color);
+    color: var(--primary-text-color);
 }
 
 /* Portfolio.html */
@@ -153,7 +180,7 @@ button {
 .filtr {
     background-color: var(--secondary-background-color);
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -162,10 +189,24 @@ button {
 .filtr:hover,
 .filtr:focus {
     background-color: var(--logo-button-text-color);
-    color:#fff;
-    font-family: 'Roboto', sans-serif;
+    color: var(--added-text-color);
+    font-family: inherit, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;.
+}
+/* Hero in Portfolio.html */
+.portfolio-title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-list {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }

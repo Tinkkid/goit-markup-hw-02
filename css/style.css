@@ -43,6 +43,10 @@ line-height: 1.2;
 .link {
     color: var(--secondary-text-color);
     text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .link:hover {color: var(--logo-button-text-color);
 }
@@ -56,6 +60,10 @@ line-height: 1.2;
 .site-contacts {
    color: var(--secondary-text-color);
    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .site-contacts:hover {
     color: var(--logo-button-text-color);

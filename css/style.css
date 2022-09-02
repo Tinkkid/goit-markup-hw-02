@@ -9,6 +9,7 @@
     --background-color-hover:#2196F3;
     --background-color-added:#2F303A;
     --text-color: #000000;
+    --text-color-footer:rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -24,13 +25,7 @@ letter-spacing: 0.03em;
 .list {
     list-style: none;
 }
-a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-a.logo-footer {
-    color: var(--primary-background-color);
-}
+
 /* Navigation's site */
 
 .logo-letters {
@@ -87,13 +82,12 @@ line-height: 1.2;
     background-color: var(--logo-button-text-color);
     color: var(--added-text-color);
 
-    font-family: inherit, sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-}
-button {
+
     cursor: pointer;
 }
 
@@ -144,7 +138,7 @@ button {
     background-color: var(--background-color-added);
 }
 .logo-footer {
-    color: var(--added-text-color)
+    color: var(--added-text-color);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -153,12 +147,14 @@ button {
     line-height: 1.2;
 }
 .footer-contacts {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-color-footer);
     font-style: normal;
+    text-decoration: none;
 }
 .footer-adress {
     color: var(--added-text-color);
     font-style: normal;
+    text-decoration: none;
 }
 .footer-adress:hover {
     color: var(--added-text-color);
@@ -177,18 +173,20 @@ button {
 /* Filtr buttons */
 .filtr {
     background-color: var(--secondary-background-color);
-    color: var(--primary-text-color);
-    font-family: inherit, sans-serif;
+    color: var(--secondary-text-color);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+
+    cursor: pointer;
 }
 .filtr:hover,
 .filtr:focus {
     background-color: var(--logo-button-text-color);
     color: var(--added-text-color);
-    font-family: inherit, sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;

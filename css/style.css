@@ -161,16 +161,16 @@ button {
     font-style: normal;
 }
 .footer-adress:hover {
-    color: var(--primary-text-color);
+    color: var(--added-text-color);
 }
 .footer-adress:focus {
-    color: var(--primary-text-color);
+    color: var(--added-text-color);
 }
 .footer-contacts:hover {
-    color: var(--primary-text-color);
+    color: var(--added-text-color);
 }
 .footer-contacts:focus {
-    color: var(--primary-text-color);
+    color: var(--added-text-color);
 }
 
 /* Portfolio.html */

@@ -10,17 +10,17 @@
     --background-color-added:#2F303A;
     --text-color: #000000;
     --text-color-footer:rgba(255, 255, 255, 0.6);
+    --active-button-color: #188CE8;
 }
 
 body {
-background-color: var(--primary-background-color) ;
-color: var(--primary-text-color);
-
-font-family: 'Roboto', sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+    background-color: var(--primary-background-color) ;
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 .list {
     list-style: none;
@@ -32,13 +32,12 @@ letter-spacing: 0.03em;
     color: var(--logo-button-text-color);
 }
 .logo-header {
-color:var(--text-color);
-text-decoration: none;
-
-font-family: 'Raleway', sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 .link {
     color: var(--secondary-text-color);
@@ -48,10 +47,10 @@ line-height: 1.2;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.link:hover {color: var(--logo-button-text-color);
+.link:hover,
+.link:focus {color: var(--logo-button-text-color);
 }
-.link:focus {color: var(--logo-button-text-color)
-}
+
 .link.current {
     color: var(--logo-button-text-color);
 }
@@ -65,9 +64,7 @@ line-height: 1.2;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.site-contacts:hover {
-    color: var(--logo-button-text-color);
-}
+.site-contacts:hover,
 .site-contacts:focus {
     color: var(--logo-button-text-color);
 }
@@ -78,7 +75,6 @@ line-height: 1.2;
 }
 .hero-title {
     color: var(--added-text-color);
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -89,14 +85,16 @@ line-height: 1.2;
 .hero-button {
     background-color: var(--logo-button-text-color);
     color: var(--added-text-color);
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-
     cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--active-button-color);
 }
 
 /* Features and Images of the portfolio*/
@@ -117,7 +115,6 @@ line-height: 1.2;
 /* Our works */
 .our-work-title, .our-teams-title {
     color: var(--secondary-text-color);
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -164,18 +161,15 @@ line-height: 1.2;
     font-style: normal;
     text-decoration: none;
 }
-.footer-adress:hover {
+.footer-adress:hover,
+.footer-adress:focus{
     color: var(--added-text-color);
 }
-.footer-adress:focus {
-    color: var(--added-text-color);
-}
-.footer-contacts:hover {
-    color: var(--added-text-color);
-}
+.footer-contacts:hover,
 .footer-contacts:focus {
     color: var(--added-text-color);
 }
+
 
 /* Portfolio.html */
 /* Filtr buttons */
@@ -187,7 +181,6 @@ line-height: 1.2;
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
-
     cursor: pointer;
 }
 .filtr:hover,
@@ -206,14 +199,12 @@ line-height: 1.2;
 }
 .portfolio-title {
     color: var(--secondary-text-color);
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.portfolio-list {
-    
+.portfolio-list {    
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
